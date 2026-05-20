@@ -37,10 +37,8 @@ Bienvenido al repositorio del proyecto **FleetOps**, un sistema web desarrollado
 │   │   ├── ElectricVehicle.php          # Abstracción para vehículos eléctricos
 │   │   ├── GasolineVehicle.php          # Abstracción para vehículos de combustión
 │   │   ├── ElectricVan.php              # Camioneta eléctrica
-│   │   ├── ElectricMotorcycle.php       # Moto eléctrica
 │   │   ├── Truck.php                    # Camión de combustión
-│   │   ├── CargoVan.php                 # Furgón de carga
-│   │   └── GasolineMotorcycle.php       # Moto de gasolina
+│   │   └── CargoVan.php                 # Furgón de carga
 │   ├── controllers/
 │   │   ├── VehicleController.php        # Lógica de CRUD para vehículos
 │   │   └── AuthController.php           # Lógica de autenticación
@@ -80,9 +78,6 @@ Bienvenido al repositorio del proyecto **FleetOps**, un sistema web desarrollado
 │   └── index.html
 ├── api/
 │   └── index.php                        # Router central de la API REST
-├── ENUNCIADO.md                         # Requisitos del proyecto
-├── SETUP.md                             # Guía de configuración
-├── TESTING.md                           # Casos de prueba
 └── README.md                            # Este archivo
 ```
 
