@@ -1,0 +1,109 @@
+.card {
+  background: #fff;
+  border: 1px solid #ebebf0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.vehicleInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.typeIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typeIcon.electric {
+  background: #ebf2ff;
+}
+
+.typeIcon.combustion {
+  background: #fff4eb;
+}
+
+.plate {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1c1c1e;
+  letter-spacing: 0.3px;
+}
+
+.model {
+  font-size: 11px;
+  color: #8e8e93;
+  margin-top: 1px;
+}
+
+.status {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.location span {
+  font-size: 11px;
+  color: #aeaeb2;
+}
+
+.levelContainer {
+  margin-bottom: 6px;
+}
+
+.levelHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.levelHeader span {
+  font-size: 10px;
+  color: #8e8e93;
+  font-weight: 700;
+}
+
+.levelBar {
+  height: 4px;
+  background: #f0f0f5;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.levelFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+.details {
+  font-size: 11px;
+  color: #8e8e93;
+  margin-top: 8px;
+}
+
+.details b {
+  color: #1c1c1e;
+  font-weight: 600;
+}

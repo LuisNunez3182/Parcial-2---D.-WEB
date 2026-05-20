@@ -1,0 +1,266 @@
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.leftSection,
+.rightSection {
+  flex: 1;
+  padding: 24px 22px;
+  overflow-y: auto;
+}
+
+.leftSection {
+  border-right: 1px solid #ebebf0;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1c1c1e;
+  margin: 0 0 4px;
+}
+
+.sectionSubtitle {
+  font-size: 11px;
+  color: #8e8e93;
+  margin: 0 0 20px;
+}
+
+.formGroup {
+  margin-bottom: 14px;
+}
+
+.label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  color: #6e6e73;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #e0e0e5;
+  border-radius: 8px;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  color: #1c1c1e;
+  background: #fff;
+}
+
+.input:focus {
+  border-color: #d40511;
+}
+
+.select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #e0e0e5;
+  border-radius: 8px;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  color: #1c1c1e;
+  background: #fff;
+  cursor: pointer;
+}
+
+.select:focus {
+  border-color: #d40511;
+}
+
+.calculateButton {
+  width: 100%;
+  padding: 12px;
+  background: #d40511;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  transition: opacity 0.2s;
+}
+
+.calculateButton:hover {
+  opacity: 0.9;
+}
+
+.resultBox {
+  background: #f8f8fb;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #ebebf0;
+}
+
+.resultLabel {
+  font-size: 10px;
+  font-weight: 700;
+  color: #aeaeb2;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.resultItem {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid #ebebf0;
+}
+
+.resultItemLabel {
+  font-size: 10px;
+  color: #8e8e93;
+}
+
+.resultItemValue {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1c1c1e;
+  margin-top: 2px;
+}
+
+.totalBox {
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+}
+
+.totalAmount {
+  color: #fff;
+  font-weight: 800;
+  font-size: 21px;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.filterButton {
+  padding: 6px 13px;
+  border-radius: 20px;
+  border: 1px solid;
+  background: #fff;
+  color: #6e6e73;
+  font-size: 11px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filterButton.active {
+  font-weight: 700;
+}
+
+.filterButton:hover {
+  opacity: 0.8;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.statItem {
+  background: #f8f8fb;
+  border-radius: 9px;
+  padding: 10px 12px;
+  border: 1px solid #ebebf0;
+}
+
+.statLabel {
+  font-size: 10px;
+  color: #8e8e93;
+}
+
+.statValue {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1c1c1e;
+  margin-top: 2px;
+}
+
+.tableContainer {
+  border: 1px solid #ebebf0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.table thead {
+  background: #f5f5f8;
+}
+
+.table th {
+  padding: 9px 11px;
+  text-align: left;
+  font-weight: 600;
+  color: #8e8e93;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table td {
+  padding: 8px 11px;
+  color: #6e6e73;
+  font-size: 12px;
+}
+
+.plate {
+  font-weight: 700;
+  color: #1c1c1e;
+  letter-spacing: 0.3px;
+}
+
+.table tr.even {
+  background: #fff;
+}
+
+.table tr.odd {
+  background: #fafafa;
+}
+
+.table tr {
+  border-top: 1px solid #f2f2f7;
+}
+
+.status {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+}

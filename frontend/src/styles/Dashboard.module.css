@@ -1,0 +1,83 @@
+/* Esto usa un flex:1 que hace que el contenedor se expanda para llenar el espacio disponible */
+.container {
+  padding: 24px 28px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.header {
+  margin-bottom: 22px;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: 700;
+  color: #1c1c1e;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #8e8e93;
+  margin: 4px 0 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.vehiclesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.vehiclesHeader h2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0;
+}
+
+.vehicleCount {
+  font-size: 11px;
+  color: #8e8e93;
+}
+
+.vehiclesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.loadingMessage,
+.emptyMessage {
+  text-align: center;
+  padding: 40px;
+  color: #aeaeb2;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vehiclesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .vehiclesGrid {
+    grid-template-columns: 1fr;
+  }
+}

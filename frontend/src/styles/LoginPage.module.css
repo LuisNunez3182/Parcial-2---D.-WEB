@@ -1,0 +1,136 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f4f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 40px;
+  width: 340px;
+  border: 1px solid #ebebf0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 17px;
+  color: #1c1c1e;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #8e8e93;
+}
+
+.formGroup {
+  margin-bottom: 14px;
+}
+
+.label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  color: #6e6e73;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputWrapper svg {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input {
+  width: 100%;
+  padding: 9px 12px 9px 32px;
+  border: 1px solid #e0e0e5;
+  border-radius: 8px;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  color: #1c1c1e;
+  background: #fff;
+}
+
+.input:focus {
+  border-color: #d40511;
+  box-shadow: 0 0 0 3px rgba(212, 5, 17, 0.1);
+}
+
+.select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #e0e0e5;
+  border-radius: 8px;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  color: #1c1c1e;
+  background: #fff;
+  cursor: pointer;
+}
+
+.select:focus {
+  border-color: #d40511;
+}
+
+.error {
+  background: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #c62828;
+  margin-bottom: 14px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 11px;
+  background: #d40511;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #b30410;
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  color: #aeaeb2;
+  margin-top: 18px;
+}
