@@ -94,12 +94,10 @@ Bienvenido al repositorio del proyecto **FleetOps**, un sistema web desarrollado
 ```
 Vehicle (abstracta)
 ├── ElectricVehicle (abstracta)
-│   ├── ElectricVan
-│   └── ElectricMotorcycle
+│   └──ElectricVan
 └── GasolineVehicle (abstracta)
     ├── Truck
-    ├── CargoVan
-    └── GasolineMotorcycle
+    └── CargoVan
 ```
 
 ### 2. **Funcionalidades**
@@ -252,7 +250,6 @@ Mapean URLs a métodos de controlador.
 
 - **Sin persistencia de BD**: Los datos se pierden al reiniciar el servidor o expirar la sesión
 - **CORS habilitado**: Para permitir solicitudes desde el frontend
-- **Diseño responsive**: La UI se adapta a dispositivos móviles
 
 ---
 
