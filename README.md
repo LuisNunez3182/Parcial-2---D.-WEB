@@ -221,10 +221,12 @@ $_SESSION['usuarios'] = [
 
 El sistema calcula costos operativos incluyendo:
 
-1. **Costo de energía/combustible** = Consumo × Precio unitario
-2. **Factor de carga** = +15% según peso transportado
-3. **Mantenimiento** = 5% del costo operativo
-5. **Costo Total** = (Energía + Carga + Mantenimiento)
+1. **Costo base** = Consumo × Precio unitario
+2. **Factor de carga** = Costo base × 1.15 (incremento del 15% por peso transportado)
+3. **Mantenimiento** = (Costo base × 1.15) × 1.05 (incremento del 5%)
+4. **Costo Total** = Costo base × 1.15 × 1.05
+
+**Fórmula simplificada:** Costo Total = Consumo × Precio × 1.15 × 1.05
 
 Todos los valores se expresan en **COP$ (Pesos Colombianos)**.
 
